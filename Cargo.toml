@@ -1,0 +1,15 @@
+[package]
+name = "dynamical-systems"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SuperInstance/dynamical-systems"
+description = "Dynamical systems in Rust — bifurcation analysis, phase portraits, stability, attractors, ODE integration"
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+num-complex = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+approx = "0.5"
